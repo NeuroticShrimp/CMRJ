@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --fire-engine-red: #d0172aff;
+    --rosy-brown: #d4a5a9ff;
+    --fire-brick: #b31425ff;
+    --french-gray: #d1d0d5cb;
+    --seasalt: #f8f7f8ff;
+    --dark-purple: #2c0e37;
+    --melon: #daa89b;
+}
+
+*{
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    color: var(--dark-purple);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--french-gray);
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content-body {
+    display: inline-block;
+
+    position: relative;
+    background-color: var(--french-gray);
+    margin-left: clamp(50px, 20%, 400px);
+    margin-right: clamp(50px, 20%, 400px);
+    z-index: 1;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.footer{
+display: flex;
+justify-content: center;
+}
+
+.grid-container{
+    grid-template-columns: 1fr 3fr;
+    align-items: stretch;
+}
+
+h2{
+    display: flex;
+justify-content: center;
+}
+h3{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.in-text-image1{
+    float: left;
+    padding: 1rem;
+}
+.in-text-image2{
+    float: right;
+    padding: 1rem;
+}
+
+.laureatesList {
+    list-style: none;
+    max-width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .laureatesList {
+    position: relative;
+    padding-left: 10px;
+    float: left;
+  }
+  .laureatesList:before {
+    border-radius: 100%;
+    position: absolute;
+    background: #000;
+    height: 5px;
+    width: 5px;
+    top: 6px;
+    left: 0;
+  }
+  .laureatesList:nth-child(even) {
+    padding-right: 10px;
+    text-align: right;
+    padding-left: 0;
+    float: right;
+  }
+  .laureatesList:nth-child(even):before {
+    left: auto;
+    right: 0;
+  }
+
+.logo {
+    position: relative;
+    aspect-ratio: 10 / 9;
+    height: 200px;
+    background-image: url("logo.png");
+    background-size: 100%;
+    border-radius: 40%;
+    margin-bottom: 50px;
+}
+
+
+/*xs*/
+@media screen and (max-width: 576px) {
+    .content-body {
+        position: relative;
+        background-color: var(--french-gray);
+        margin-left: clamp(50px, 20%, 400px);
+        margin-right: clamp(50px, 20%, 400px);
+        z-index: 1;
+    }
+
+    .navTab:hover {
+        cursor: pointer;
+        background-color: var(--seasalt);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px) translateX(-5px) translateZ(-5px) perspective(-20px);
+    }
+}   
+/*s*/
+@media screen and (max-width: 768px) {
+    .content-body {
+        position: relative;
+        background-color: var(--french-gray);
+        margin-left: clamp(50px, 20%, 400px);
+        margin-right: clamp(50px, 20%, 400px);
+        z-index: 1;
+    }
+}   
+/*med*/
+@media screen and (max-width: 992px) {
+    .content-body {
+        position: relative;
+        background-color: var(--french-gray);
+        margin-left: clamp(50px, 20%, 400px);
+        margin-right: clamp(50px, 20%, 400px);
+        z-index: 1;
+    }
+}   
+/*large*/
+@media screen and (max-width: 1200px) {
+    .content-body {
+        position: relative;
+        background-color: var(--french-gray);
+        margin-left: clamp(50px, 20%, 400px);
+        margin-right: clamp(50px, 20%, 400px);
+        z-index: 1;
+    }
+}   
+/*xl*/
+@media screen and (max-width: 1400px) {
+    .content-body {
+        position: relative;
+        background-color: var(--french-gray);
+        margin-left: clamp(50px, 20%, 400px);
+        margin-right: clamp(50px, 20%, 400px);
+        z-index: 1;
+    }
+}   
+
+/*2xl*/
+@media screen and (max-width: 1400px) {
+    .content-body {
+        position: relative;
+        background-color: var(--french-gray);
+        margin-left: clamp(50px, 20%, 400px);
+        margin-right: clamp(50px, 20%, 400px);
+        z-index: 1;
+    }
+}   
+@media screen and (max-aspect-ratio: 7/4) {
+    .content-body {
+        position: relative;
+        background-color: var(--french-gray);
+        margin-left: clamp(50px, 20%, 400px);
+        margin-right: clamp(50px, 20%, 400px);
+        z-index: 1;
+    }
+}   
